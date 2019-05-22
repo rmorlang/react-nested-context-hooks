@@ -1,0 +1,59 @@
+{
+  "name": "react-nested-context-hooks",
+  "version": "0.2.0",
+  "description": "React library and hooks for managing state in a network of React Contexts.",
+  "main": "dist/react-nested-context-hooks.cjs.js",
+  "module": "dist/react-nested-context-hooks.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist",
+    "clean": "rimraf dist",
+    "dev": "rollup -c -w",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "jest": {
+    "verbose": true,
+    "setupTestFrameworkScriptFile": "./setupTests.js"
+  },
+  "app.author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "jest-plugins": "^2.9.0",
+    "jest-plugins-recommended": "^2.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "rollup": "^1.12.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-node-resolve": "^5.0.0"
+  }
+}
